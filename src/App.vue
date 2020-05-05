@@ -4,21 +4,32 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
-    <router-view />
+    <router-view></router-view>
+    
   </div>
 </template>
+<script>
 
-<style>
+export default {
+  name: 'App',
+  
+}
+</script>
+<style lang="css">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /* text-align: center; */
   color: #2c3e50;
 }
 
 #nav {
-  padding: 30px;
+  padding: 10px 30px;
+  background-color: #42b983;
+  /* width: 100%; */
+  
+  margin: 0px 0px 15px;
 }
 
 #nav a {
@@ -27,6 +38,7 @@
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: #ebc700;
 }
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 </style>
